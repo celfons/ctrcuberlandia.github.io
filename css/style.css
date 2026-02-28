@@ -1,0 +1,55 @@
+/* CTR Cuberlandia – custom styles */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-image: url('../assets/images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fixed parallax effect only for larger screens where it performs well */
+@media (min-width: 992px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem 1rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 1rem;
+}
