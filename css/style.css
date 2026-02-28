@@ -53,3 +53,11 @@ body {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   margin-top: 1rem;
 }
+
+.hero-home {
+  background-image: url('../IMG_1675.png');
+}
+
+.hero-clickable {
+  cursor: pointer;
+}
